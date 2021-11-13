@@ -5,7 +5,7 @@ Personal Webstie written in
 - HTML | CSS | JavaScript
 - CoffeeScript
 
-View the site here: 
-DylanStocking.com
+<h3>View The Site Here</h3>
+https://www.dylanstocking.com/
 
 ![image](https://github.com/PhantomLeak/Personal_Site/blob/main/Personal_Site.png)
