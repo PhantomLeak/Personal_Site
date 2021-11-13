@@ -1,0 +1,437 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .main .top-row:not(.auth) {
+        display: none;
+    }
+
+    .main .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .main .top-row a, .main .top-row .btn-link {
+        margin-left: 0;
+    }
+}
+
+/*Global*/
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.containers {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.aboutcontainer{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background:#f4f4f4;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#f4f4f4;
+}
+
+.dark{
+    padding: 15px;
+    background:#83838318;
+    color:rgb(88, 60, 245);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------------Header-------------------------------------------------*/
+
+header {
+    background: #494b4d;
+    color: #f4f4f4;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #cccccc 0 3px solid;
+}
+
+header a{
+    color:#f4f4f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+    margin-top: -.5%;
+    margin-left: 3%;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+pre {font-size:.20em;margin:0 auto;}
+
+.imgcontainer {
+    margin-top: -1%;
+}
+
+/*-------------------------------------------------Navbar-------------------------------------------------*/
+nav {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+header a:hover{
+    color: #7E4191;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
+
+/*-------------------------------------------------Showcase-------------------------------------------------*/
+#showcase {
+    min-height: 400px;
+    background:url("../../photos/webdev.jpg") no-repeat 0 -600px;
+    text-align: center;
+    color:#f4f4f4;
+    background-position: left;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/*-------------------------------------------------Linkedin-------------------------------------------------*/
+#Linkedin {
+    padding: 15px;
+    color:#f4f4f4;
+    background:#494b4d;
+    margin-left: -10px;
+    margin-bottom: -1%;
+}
+
+#Linkedin li{
+    display:inline;
+    padding: 0 1.32% 0 1.32%;
+}
+
+#Linkedin h3{
+    float: left;
+    margin-top: 10px;
+}
+
+/* boxes */
+
+#boxes_work{
+    text-align: center;
+    margin-top: -5%;
+}
+
+#boxes_work .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: inherit;
+    margin-left: 1.25%;
+}
+
+#boxes{
+    margin-top: 50px;
+}
+
+#boxes h3{
+    margin-left: 10%;
+}
+
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 90px;
+    margin-left: 10%;
+}
+
+/*-------------------------------------------------Sidebar-------------------------------------------------*/
+@media (max-width: 767.98px) {
+    .main .top-row:not(.auth) {
+        display: none;
+    }
+
+    aside#sidebar.auth {
+        justify-content: space-between;
+    }
+
+}
+aside#sidebar{
+    float: right;
+    width:33%;
+    margin-top: 10px;
+}
+
+#aboutme{
+    margin-top: 60px;
+    margin-bottom: 120px;
+    text-align: center;
+    color: black;
+    background-color: #83838318;
+}
+
+#aboutme a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/*main-col*/
+article#main-col{
+    float:left;
+    width: 55%;
+    margin-top: 5%;
+
+}
+
+
+/*sidebar*/
+aside#sidebar{
+    float:right;
+    width: 30%;
+    margin-top: 5%;
+}
+
+aside#sidebar h3{
+    color:black;
+}
+
+/*-------------------------------------------------Ventures-------------------------------------------------*/
+
+.Ventures{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.Ventures h1{
+    text-align: center;
+}
+
+.Ventures p{
+    text-align: center;
+}
+
+.Ventures h3{
+    font-weight: normal;
+}
+
+article#portheader h1{
+    color: black;
+}
+
+/*-------------------------------------------------My Work-------------------------------------------------*/
+
+.columnWork {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .myWork:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*-------------------------------------------------Resume-------------------------------------------------*/
+
+#resume{
+    margin-top: -6%;
+    background-color: #83838318;
+    margin-left: -1%;
+} 
+.g-recaptcha{
+    display: inline-block;
+}
+
+/*-------------------------------------------------Contact Form-------------------------------------------------*/
+
+form{
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-top: 110px;
+    margin-bottom: 130px;
+}
+
+label, input, textarea{
+    width: 70%;
+    display: block;
+    padding-bottom: 10px;
+    margin-left: 17%;
+    margin-top: 10px;
+}
+
+button{
+    background-color: #f4f4f4;
+    color: black;
+    height: 40px;
+    width: 150px;
+}
+
+.email{
+    width: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.subject{
+    width: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.message{
+    width: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/*-------------------------------------------------Footer-------------------------------------------------*/
+
+#footersection li{
+    display: inline;
+    padding: 0 1.32% 0 1.32%;
+}
+
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#cccccc;
+    background-color:#494b4d;
+    text-align: center;
+    bottom: 0px;
+}
