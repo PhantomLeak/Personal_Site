@@ -1,11 +1,11 @@
 # Personal_Site
 
-Personal Website written in 
+My personal portfolio website written in:  
 - PHP
 - HTML | CSS | JavaScript
 - CoffeeScript
 
-<h3>View The Site Here</h3>
+## View The Site Here
 https://www.dylanstocking.com/
 
 ## Acknowledgments
